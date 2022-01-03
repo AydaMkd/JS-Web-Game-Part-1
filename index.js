@@ -16,7 +16,7 @@ function newItem(url, left, bottom){
     })
 }
 
-
+// bonus solution 
 for (let i = 0 ; i<= window.outerWidth/100; i++)
 {
     newImage('assets/sky.png',i*100,window.innerHeight-100)
