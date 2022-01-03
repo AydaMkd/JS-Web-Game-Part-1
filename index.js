@@ -32,42 +32,46 @@ function newItem(url, left, bottom){
 
 //}
 
-for (let i = 0 ; i<= window.outerWidth/100; i++)
-{
-    newImage('assets/sky.png',i*100,window.innerHeight-100)
 
-    newImage('assets/sky.png',i*100,window.innerHeight-200)
-
-
-    newImage('assets/sky.png',i*100,window.innerHeight-300)
-
-
-
-    newImage('assets/sky.png',i*100,window.innerHeight-400)
-
-
-    newImage('assets/sky.png',i*100,window.innerHeight-500)
-
-
+function newSkyPiece(i) {
+    for (let j = 1 ; j<= 5; j++)
+    {
+    const left = i * 100;
+    const bottom = window.innerHeight - (100 * j)
+    newImage("assets/sky.png", left, bottom);
+    }
 }
 
-
-
-
-
-for (let i = 0 ; i<= window.outerWidth/100; i++)
-
-{
-newImage('assets/grass.png',i*100,0)
-newImage('assets/grass.png',i*100,100)
-
-
-newImage('assets/grass.png',i*100,200)
-
-newImage('assets/grass.png',i*100,300)
-
-newImage('assets/grass.png',i*100,400)
+    function newGrassPiece(i) {
+        for (let j = 0 ; j<= 4; j++)
+        {
+        const left = i * 100;
+        const bottom= 100 *j;
+       
+        newImage("assets/grass.png", left,bottom);
+        }
 }
+function Skypicture (){
+    for (let i = 0 ; i <= window.outerWidth / 100; i++) {
+        newSkyPiece(i)
+        newGrassPiece(i)
+    }
+        
+}
+
+Skypicture()
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 newImage('assets/green-character.gif', 100, 100)
