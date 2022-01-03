@@ -16,7 +16,22 @@ function newItem(url, left, bottom){
     })
 }
 
-// bonus solution 
+
+
+
+
+// bonus solution: (it did not work this way)
+
+//function sky()
+//{
+//for (let j = 1; j<=5; j++)
+
+//for (let i = 0 ; i<= window.outerWidth/100; i++)
+
+//{newImage('assets/sky.png',i*100,window.innerHeight-100*j)}
+
+//}
+
 for (let i = 0 ; i<= window.outerWidth/100; i++)
 {
     newImage('assets/sky.png',i*100,window.innerHeight-100)
@@ -33,7 +48,11 @@ for (let i = 0 ; i<= window.outerWidth/100; i++)
 
     newImage('assets/sky.png',i*100,window.innerHeight-500)
 
+
 }
+
+
+
 
 
 for (let i = 0 ; i<= window.outerWidth/100; i++)
@@ -61,6 +80,7 @@ newImage('assets/well.png', 500, 425)
 newItem('assets/sword.png', 500, 405)
 newItem('assets/sheild.png', 165, 185)
 newItem('assets/staff.png', 600, 100)
+
 
 
 
