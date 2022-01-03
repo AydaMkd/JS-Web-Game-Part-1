@@ -16,23 +16,6 @@ function newItem(url, left, bottom){
     })
 }
 
-
-
-
-
-// bonus solution: (it did not work this way)
-
-//function sky()
-//{
-//for (let j = 1; j<=5; j++)
-
-//for (let i = 0 ; i<= window.outerWidth/100; i++)
-
-//{newImage('assets/sky.png',i*100,window.innerHeight-100*j)}
-
-//}
-
-
 function newSkyPiece(i) {
     for (let j = 1 ; j<= 5; j++)
     {
@@ -60,19 +43,6 @@ function Skypicture (){
 }
 
 Skypicture()
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 newImage('assets/green-character.gif', 100, 100)
 newImage('assets/tree.png', 200, 300)
